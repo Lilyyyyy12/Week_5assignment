@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lily Luxury | Gallery</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <header class="gallery-header">
+
+            <h1 class="brand">Lily <span>Luxury</span></h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="products.html">Products</a>
+            </nav>
+
+            <a href="#gallery-content" aria-label="Go to gallery">
+                ☰
+            </a>
+
+        </header>
+
+        <h1>Our Gallery</h1>
+
+        <p style="text-align: center;">
+            Explore beauty, fashion and elegance.
+        </p>
+
+        <main class="gallery-layout" id="gallery-content">
+
+            <!-- LEFT BOX: FORM -->
+
+            <section class="gallery-box">
+
+                <h2>Contact Us</h2>
+
+                <p>
+                    We would love to hear from you.
+                    Fill in the form below.
+                </p>
+
+                <form action="#" method="get">
+
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                    <label for="subject">Subject</label>
+
+                    <select id="subject" name="subject">
+
+                        <option value="">Choose a subject</option>
+
+                        <option value="products">Products</option>
+
+                        <option value="gallery">Gallery</option>
+
+                        <option value="enquiry">General enquiry</option>
+
+                    </select>
+
+                    <label for="message">Message</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Write your message here">
+                    </textarea>
+
+                    <button type="submit" class="btn">
+                        Submit
+                    </button>
+
+                </form>
+
+            </section>
+
+            <!-- RIGHT BOX: TEXT WITH BACKGROUND IMAGE -->
+
+            <section class="gallery-box">
+
+                <div class="background-text">
+
+                    <h2>Discover Your Beauty</h2>
+
+                    <p>
+                        Style is a way of expressing who you are.
+                        Discover elegance and beauty with Lily Luxury.
+                    </p>
+
+                    <a href="products.html" class="btn">
+                        Shop Our Collection
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Lily Luxury. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,536 @@
+/* =================================
+   LILY LUXURY WEBSITE
+   Main CSS Styling
+================================= */
+
+/* 1. General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8fb;
+    color: #333333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h1 {
+    color: #8b2252;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #8b2252;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* 2. Brand heading */
+
+.brand {
+    text-align: center;
+    color: #8b2252;
+    font-size: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.brand span {
+    color: #c28b45;
+}
+
+/* 3. Navigation menu */
+
+.navbar {
+    background-color: #681d40;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd6e7;
+}
+
+/* 4. Buttons */
+
+.btn {
+    display: inline-block;
+    background-color: #a83265;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #681d40;
+    transform: translateY(-2px);
+}
+
+/* 5. Images */
+
+.gallery-image,
+.product-image,
+.dashboard-image {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* =================================
+   INDEX PAGE
+================================= */
+
+.index-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(104, 29, 64, 0.12);
+    text-align: center;
+}
+
+.index-container h1 {
+    font-size: 42px;
+}
+
+.index-container p {
+    font-size: 17px;
+    color: #666;
+}
+
+.index-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto 0;
+}
+
+.index-links a {
+    display: block;
+    padding: 15px;
+    background-color: #fff0f6;
+    color: #8b2252;
+    border: 1px solid #f0c3d6;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.index-links a:hover {
+    background-color: #8b2252;
+    color: white;
+    transform: translateX(5px);
+}
+
+/* =================================
+   DASHBOARD PAGE
+================================= */
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.sidebar {
+    background-color: #681d40;
+    color: white;
+    padding: 25px 18px;
+    border-radius: 15px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #a83265;
+    color: white;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-width: 0;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(104, 29, 64, 0.10);
+    border: 1px solid #f2dce6;
+}
+
+.dashboard-card h2 {
+    margin-bottom: 12px;
+}
+
+.dashboard-card img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+
+.dashboard-card p {
+    color: #666;
+}
+
+/* =================================
+   GALLERY PAGE
+================================= */
+
+.gallery-header {
+    background-color: #681d40;
+    color: white;
+    padding: 22px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gallery-header .brand {
+    color: white;
+    margin: 0;
+    font-size: 25px;
+}
+
+.gallery-header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.gallery-header nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.gallery-header nav a:hover {
+    color: #ffd6e7;
+}
+
+.gallery-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.gallery-box {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(104, 29, 64, 0.10);
+    border: 1px solid #f2dce6;
+}
+
+.gallery-box h2 {
+    text-align: center;
+}
+
+.gallery-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-box input,
+.gallery-box textarea,
+.gallery-box select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dfb8ca;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.gallery-box input:focus,
+.gallery-box textarea:focus,
+.gallery-box select:focus {
+    outline: 2px solid #a83265;
+    border-color: #a83265;
+}
+
+/* Text displayed over a background image */
+
+.background-text {
+    min-height: 300px;
+    background-image: linear-gradient(
+        rgba(40, 10, 25, 0.45),
+        rgba(40, 10, 25, 0.45)
+    ), url("images/gallery3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    border-radius: 12px;
+}
+
+.background-text h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.background-text p {
+    color: white;
+}
+
+/* =================================
+   PRODUCT PAGE
+================================= */
+
+.product-banner {
+    background: linear-gradient(135deg, #681d40, #b34c79);
+    color: white;
+    padding: 40px 25px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.product-banner h1 {
+    color: white;
+    font-size: 38px;
+}
+
+.product-banner p {
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(104, 29, 64, 0.10);
+    border: 1px solid #f2dce6;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(104, 29, 64, 0.18);
+}
+
+.product-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #666;
+}
+
+.price {
+    color: #a83265;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #681d40;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .index-container {
+        padding: 25px 18px;
+    }
+
+    .index-container h1 {
+        font-size: 32px;
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .sidebar li {
+        margin-bottom: 0;
+    }
+
+    .gallery-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-header nav {
+        gap: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .product-card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-banner h1 {
+        font-size: 29px;
+    }
+
+    .brand {
+        font-size: 26px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+}
